@@ -51,6 +51,21 @@ namespace UserRegistrationProgram
             {
                 Console.WriteLine("Entered Email id is Invalid");
             }
+
+            Regex regex2 = new Regex("^[+][0-9]{0,2}[ ][0-9]{0,10}$");
+            Console.WriteLine("Enter Contact Number :");
+            string contact = (Console.ReadLine());
+
+            if (regex2.IsMatch(contact))
+            {
+                Console.WriteLine("Your contact number is :" + contact);
+            }
+            else
+            {
+                Console.WriteLine("Entered Mobile Numberis invalid");
+            }
+
+
         }
     }
 }
