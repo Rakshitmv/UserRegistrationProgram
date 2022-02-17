@@ -65,7 +65,7 @@ namespace UserRegistrationProgram
                 Console.WriteLine("Entered Mobile Numberis invalid");
             }
 
-            Regex regex3 = new Regex("^(.*?[A-Z])(.*?[0-9])[a-zA-Z0-9]{6,}$");
+            Regex regex3 = new Regex("^(.*?[A-Z])(.*?[0-9])(.*?[/*-+_@&$#%])[a-zA-Z0-9/*-+_@&$#%]{6,}$");
 
             Console.WriteLine("Enter password :");
             string password = Console.ReadLine();
