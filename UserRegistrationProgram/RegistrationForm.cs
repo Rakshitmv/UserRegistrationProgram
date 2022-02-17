@@ -36,6 +36,21 @@ namespace UserRegistrationProgram
             {
                 Console.WriteLine("Entered Last Name is Invalid");
             }
+
+
+            Regex regex = new Regex("^[A-Z]{1,}[a-z]{1,}[0-9]{0,}[@][a-z]{1,5}[.][a-z]{1,3}$");
+            Regex regex1 = new Regex("^[A-Z]{1,}[a-z]{1,}[0-9]{0,}[@][a-z]{1,5}[.][a-z]{1,2}[.][a-z]{1,2}$");
+
+            Console.WriteLine("Enter Email id :");
+            string emailId = Console.ReadLine();
+            if (regex.IsMatch(emailId) || regex1.IsMatch(emailId))
+            {
+                Console.WriteLine("Your Email id is :" + emailId);
+            }
+            else
+            {
+                Console.WriteLine("Entered Email id is Invalid");
+            }
         }
     }
 }
