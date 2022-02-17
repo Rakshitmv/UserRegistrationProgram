@@ -38,7 +38,7 @@ namespace UserRegistrationProgram
             }
 
 
-            Regex regex = new Regex("^[A-Z]{1,}[a-z]{1,}[0-9]{0,}[@][a-z]{1,5}[.][a-z]{1,3}$");
+            Regex regex = new Regex("^([a-zA-Z0-9.]{3,})?[@][a-zA-Z0-9]{1,}[.][a-zA-Z]{2,3}[.][a-zA-Z]{2,3}?$");
             Regex regex1 = new Regex("^[A-Z]{1,}[a-z]{1,}[0-9]{0,}[@][a-z]{1,5}[.][a-z]{1,2}[.][a-z]{1,2}$");
 
             Console.WriteLine("Enter Email id :");
